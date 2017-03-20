@@ -21,3 +21,12 @@ footer {
 .input-regex {
   margin: 10px;
 }
+.row-counts {
+  margin: 10px;
+}
+.row-counts div {
+  color: #d4d4d4;
+}
+.row-counts div span {
+  color: #000;
+}
