@@ -1,0 +1,23 @@
+.input-search-term {
+  max-width: inherit;
+}
+.btn-genie {
+  border-top: 0px !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
+  border-bottom: 1px solid #000 !important;
+  margin: 10px 0px 10px 0px;
+}
+.toolbar-text-split {
+  margin: 10px;
+}
+.toolbar-text-split button {
+  font-weight: bolder !important;
+}
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+.input-regex {
+  margin: 10px;
+}

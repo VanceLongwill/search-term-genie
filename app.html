@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Search Term Genie</title>
+
+    <!-- Bootstrap -->
+    <link href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstap example template custom styles -->
+    <link rel="stylesheet" href="css/jumbotron-narrow.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Genie</a></li>
+                    <li role="presentation"><a href="#">Saved</a></li>
+                    <li role="presentation"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Search Term Genie</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn-group toolbar-text-split" role="group" aria-label="...">
+                    <!-- add on hover Comma, Semicolon, New line  -->
+                    <!-- fix active class -->
+                    <button type="button" class="btn btn-default" value=",">,</button>
+                    <button type="button" class="btn btn-default" value=";">;</button>
+                    <button type="button" class="btn btn-default active" value="\n">\n</button>
+                </div>
+
+
+            </div>
+
+            <!--  add input for regexp -->
+            <div class="col-md-6">
+
+                <div class="input-group input-regex">
+                    <span class="input-group-addon" id="basic-addon1">RegEx</span>
+                    <input type="text" class="form-control" placeholder="Enter your RegEx (eg. /\S/g)" aria-describedby="basic-addon1">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="form-horizontal">
+                <div class="form-group">
+
+                    <div class="input-search-term col-md-12">
+
+                        <!-- add toggle box for separator eg \n , ;  -->
+
+                        <textarea id='userSearchTerms' class="form-control" rows="10" placeholder="Paste your search terms here" required></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type='button' id="geniefyMe" class='btn btn-default btn-block btn-green btn-lg btn-genie' aria-label="...">Geniefy</button>
+
+        <div class="row">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="results-search-term col-md-12">
+                        <textarea id='resultsArea' class="form-control" rows="10" placeholder="Your results will appear here" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+            <p>&copy; Vance Longwill 2017</p>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src='js/app.js'></script>
+</body>
+
+</html>
