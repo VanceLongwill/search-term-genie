@@ -32,21 +32,36 @@ function geniefy(searchTerms) {
 }
 
 function sortSearchTerms(terms) {
-    
+
     terms.sort(function (a, b) {
         // ASC  -> a.length - b.length
         // DESC -> b.length - a.length
         return b.length - a.length;
     });
-    
+
     //terms.map(function(x){ return x.toUpperCase() })
-    
+
     $.map(terms, function (val, i) {
 
         console.log("No. [" + i + "]:" + "  " + val);
         terms[i] = val.toUpperCase()
+        var keywords = val.split(' ');
+        var optimisedKeywords = [];
+
+        $.map(keywords, function (kw, x) {
+
+            // if kw is not already present in optimisedKeywords
+            // add to optimisedKeywords
+            // MORE LOGIC
+            
+            
+            console.log(kw);
+
+        });
+
+
     });
-    
+
     return terms
 
 }
@@ -57,11 +72,9 @@ function splitSearchTerms(text) {
     var splitBy;
 
     // find split character from tool bar & add regexp
-    splitBy = /\n/g
+    splitBy = /\r|\n/
 
     splitText = text.split(splitBy);
-    console.log(splitText);
-    sortSearchTerms(splitText);
     return splitText
 
 }
